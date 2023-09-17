@@ -1,0 +1,15 @@
+{
+  "scriptFile" : "../ATech-AT.jar",
+  "entryPoint" : "AyurTech.Function.handlePostRequest",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "direction" : "in",
+    "name" : "req",
+    "methods" : [ "POST" ],
+    "authLevel" : "ANONYMOUS"
+  }, {
+    "type" : "http",
+    "direction" : "out",
+    "name" : "$return"
+  } ]
+}
