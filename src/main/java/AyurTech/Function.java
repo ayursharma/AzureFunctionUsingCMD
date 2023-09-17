@@ -22,7 +22,7 @@ public class Function {
             HttpRequestMessage<Optional<String>> request,
             final ExecutionContext context) {
         context.getLogger().info("Java HTTP trigger processed a request.");
-        String connectionString = "jdbc:mysql://localhost:3306/ayurdb?user=root&password=Ratlam@123";
+        String connectionString = "jdbc:mysql://localhost:3306/ayurdb?user=root&password=W0nder1ust";
         try (Connection connection = DriverManager.getConnection(connectionString);
              Statement statement = connection.createStatement()) {
             // Perform database operations
@@ -65,7 +65,7 @@ public class Function {
         }
         String requestBodyContent = requestBody.get();
 
-        String connectionString = "jdbc:mysql://localhost:3306/ayurdb?user=root&password=Ratlam@123";
+        String connectionString = "jdbc:mysql://localhost:3306/ayurdb?user=root&password=W0nder1ust";
         try (Connection connection = DriverManager.getConnection(connectionString);
              Statement statement = connection.createStatement()) {
 
